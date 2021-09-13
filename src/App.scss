@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  @apply min-h-screen w-full text-white relative;
+  background: #1d2026;
+
+  nav {
+    @apply flex items-center;
+    padding: 20px 8%;
+
+    .menu-img {
+      @apply w-5 cursor-pointer mr-5;
+    }
+
+    .logo {
+      @apply w-40 cursor-pointer;
+    }
+
+    ul {
+      flex: 1;
+      text-align: right;
+
+      li {
+        @apply inline-block list-none;
+        margin: 0 20px;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+
+    button {
+      @apply h-8 w-16 rounded-3xl border-0 outline-none cursor-pointer;
+      background: #efefef;
+
+      span {
+        @apply block h-7 w-7 rounded-full ml-0.5;
+        background: #999;
+      }
+    }
+  }
+}

@@ -43,4 +43,83 @@
       }
     }
   }
+
+  .lamp-container {
+    @apply absolute w-52;
+    top: -20px;
+    left: 22%;
+
+    .lamp {
+      @apply w-full;
+    }
+
+    .light {
+      @apply absolute;
+      top: 99%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      max-width: 700px;
+      margin-left: -9px;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -ms-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out;
+
+      &:hover {
+        zoom: 1;
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .text-container {
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+
+    h1 {
+      font-size: 80px;
+      font-weight: 400;
+    }
+
+    a {
+      text-decoration: none;
+      background: #00986f;
+      padding: 14px 40px;
+      display: inline-block;
+      color: #fff;
+      font-size: 18px;
+      margin-top: 30px;
+      border-radius: 30px;
+    }
+
+    .control {
+      @apply flex items-center justify-end;
+      margin-top: 150px;
+
+      .line {
+        width: 250px;
+        height: 4px;
+        background: #fff;
+        margin: 0 20px;
+        border-radius: 2px;
+
+        span {
+          width: 50%;
+          height: 8px;
+          margin-top: -2px;
+          border-radius: 4px;
+          background: #00986f;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .active {
+    background: #00986f;
+  }
 }
